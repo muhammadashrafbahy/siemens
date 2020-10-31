@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Scenario: User calls a rest endpoint to delete an equipment according to given equipment_id</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Scenario: User calls a rest endpoint to delete an equipment according to given equipment_id</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Scenario: User calls a rest endpoint to delete an equipment according to given equipment_id</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.182s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Given the following equipments</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Then the response status code should be 200</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Then the response status code should be 204</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When user authenticate with password &quot;test&quot;</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When user sends DELETE request to endpoint /equipment/22Y2071 with content-type application/json and empty headers</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">classMethod</td>
+<td class="success">0.180s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[2m2018-09-20 11:32:56.296?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.t.c.support.AbstractContextLoader   ?[0;39m ?[2m:?[0;39m Could not detect default resource locations for test class [memphis.AbstractIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+?[2m2018-09-20 11:32:56.321?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+?[2m2018-09-20 11:32:56.323?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9fa2c5d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@931eb4f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5a26c02e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@80af17c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@504abce4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@56a74e31, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3a6cc37b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6532545b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@609a7985, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@ca07561, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@508b1895, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@276c0e53]
+?[2m2018-09-20 11:32:56.324?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.b.f.s.DefaultListableBeanFactory    ?[0;39m ?[2m:?[0;39m Replacing scope 'cucumber-glue' from [cucumber.runtime.java.spring.GlueCodeScope@9a29aa3] to [cucumber.runtime.java.spring.GlueCodeScope@14090d6a]
+before implementation
+Hibernate: select equipment0_.equipment_id as equipmen1_0_, equipment0_.actuator as actuator2_0_, equipment0_.postioner as postione3_0_, equipment0_.sensor as sensor4_0_, equipment0_.valve as valve5_0_ from equipment equipment0_
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.8</a> at Sep 20, 2018 11:32:58 AM</p>
+</div>
+</div>
+</body>
+</html>

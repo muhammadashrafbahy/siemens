@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="memphis.loadData.TestDataLoaderSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-09-20T09:32:13" hostname="bahy-HP-255-G2-Notebook-PC" time="2.315">
+  <properties/>
+  <testcase name="should load test data" classname="memphis.loadData.TestDataLoaderSpec" time="2.315"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

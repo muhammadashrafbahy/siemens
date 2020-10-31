@@ -1,0 +1,18 @@
+[
+  {
+    "equipment_id": "22Y2071",
+    "valve": "22Y2071-valve",
+    "actuator": "22Y2071-actuator",
+    "postioner": "22Y2071",
+    "sensor": "V022 AB22 Y2071"
+  },
+  {
+    "equipment_id": "22Y5090",
+    "valve": "22Y5090-valve",
+    "actuator": "22Y5090-actuator",
+    "postioner": "22Y5090",
+    "sensor": "V022 AB22 Y5090"
+  }
+
+  
+]

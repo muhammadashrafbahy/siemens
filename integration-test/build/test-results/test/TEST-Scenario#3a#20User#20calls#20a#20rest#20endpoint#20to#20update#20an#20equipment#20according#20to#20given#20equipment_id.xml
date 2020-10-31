@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" tests="10" skipped="0" failures="2" errors="0" timestamp="2018-09-20T09:32:56" hostname="bahy-HP-255-G2-Notebook-PC" time="0.246">
+  <properties/>
+  <testcase name="When user authenticate with password &quot;test&quot;" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.0"/>
+  <testcase name="Then the response status code should be 200" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.0"/>
+  <testcase name="Given the following equipments" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.0"/>
+  <testcase name="When user sends PUT request to endpoint /equipment/22Y2071 with content-type application/json and empty headers and body {&quot;valve&quot;: &quot;test&quot;, &quot;actuator&quot; :&quot;test&quot;,&quot;postioner&quot;:&quot;test&quot;,&quot;sensor&quot;:&quot;test&quot;}" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.001"/>
+  <testcase name="Then the response status code should be 201" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.0"/>
+  <testcase name="When user sends GET request to endpoint /equipment/22Y2071 with content-type application/json and empty headers" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.007"/>
+  <testcase name="Then the response status code should be 200" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.001"/>
+  <testcase name="And the json response has &quot;equipment&quot; object" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.002"/>
+  <testcase name="And the json response of the &quot;equipment&quot; should be like that" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.015">
+    <failure message="java.lang.AssertionError: Node is null!" type="java.lang.AssertionError">java.lang.AssertionError: Node is null!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at memphis.StepDefination.equipmentStepDefination.lambda$iShouldSeeJsonResponseWithTheFollowingKeysAndValues$1(equipmentStepDefination.java:159)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1505)
+	at memphis.StepDefination.equipmentStepDefination.iShouldSeeJsonResponseWithTheFollowingKeysAndValues(equipmentStepDefination.java:157)
+	at ✽.And the json response of the &quot;equipment&quot; should be like that(equipment.feature:114)
+</failure>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: User calls a rest endpoint to update an equipment according to given equipment_id" time="0.306">
+    <failure message="java.lang.AssertionError: Node is null!" type="java.lang.AssertionError">java.lang.AssertionError: Node is null!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at memphis.StepDefination.equipmentStepDefination.lambda$iShouldSeeJsonResponseWithTheFollowingKeysAndValues$1(equipmentStepDefination.java:159)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1505)
+	at memphis.StepDefination.equipmentStepDefination.iShouldSeeJsonResponseWithTheFollowingKeysAndValues(equipmentStepDefination.java:157)
+	at ✽.And the json response of the &quot;equipment&quot; should be like that(equipment.feature:114)
+</failure>
+  </testcase>
+  <system-out><![CDATA[?[2m2018-09-20 11:32:56.710?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.t.c.support.AbstractContextLoader   ?[0;39m ?[2m:?[0;39m Could not detect default resource locations for test class [memphis.AbstractIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+?[2m2018-09-20 11:32:56.723?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+?[2m2018-09-20 11:32:56.725?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3f429cd4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@bfee7d0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@10254066, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@8d8152c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23d79cdf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5f6b3f12, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@65f762e9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2dce7a0e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@32603a0c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@34f500fd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6a4bcca0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@348bd5ed]
+?[2m2018-09-20 11:32:56.727?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.b.f.s.DefaultListableBeanFactory    ?[0;39m ?[2m:?[0;39m Replacing scope 'cucumber-glue' from [cucumber.runtime.java.spring.GlueCodeScope@773d57ae] to [cucumber.runtime.java.spring.GlueCodeScope@708292a]
+before implementation
+Hibernate: select equipment0_.equipment_id as equipmen1_0_, equipment0_.actuator as actuator2_0_, equipment0_.postioner as postione3_0_, equipment0_.sensor as sensor4_0_, equipment0_.valve as valve5_0_ from equipment equipment0_
+Hibernate: delete from equipment where equipment_id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

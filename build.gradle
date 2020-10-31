@@ -1,0 +1,177 @@
+ext {
+    springBootVersion = '2.0.4.RELEASE'
+    log4jVersion = '2.10.0'
+    slf4jVersion = '1.7.25'
+    junitVersion = '4.12'
+}
+
+buildscript {
+    repositories {
+        maven { url 'http://repo.spring.io/plugins-release' }
+        maven { url "https://plugins.gradle.org/m2/" }
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.0.4.RELEASE"
+    }
+}
+
+subprojects { p ->
+    group 'memphis'
+    version '1.0.0'
+
+    apply plugin: 'idea'
+    apply plugin: 'java'
+
+    compileJava {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+        options.encoding = 'UTF-8'
+    }
+
+    compileTestJava {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+        options.encoding = 'UTF-8'
+        options.compilerArgs += "-parameters"
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile group: 'org.slf4j', name: 'slf4j-api', version: "${slf4jVersion}"
+        compile group: 'org.slf4j', name: 'jcl-over-slf4j', version: "${slf4jVersion}"
+        compile group: 'org.slf4j', name: 'jul-to-slf4j', version: "${slf4jVersion}"
+
+        testCompile group: 'junit', name: 'junit', version: "${junitVersion}"
+    }
+
+    test { t ->
+        useJUnit()
+    }
+}
+
+project(":core") {
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'war'
+    apply plugin: 'groovy'
+
+    ext {
+        springDataVersion = '2.0.4.RELEASE'
+        jwtVersion ='0.9.0'
+        spockframeworkVersion = '1.1-groovy-2.4'
+        codehausGroovyVersion = '2.4.15'
+        swaggerUIVersion = '2.9.2'
+        commonsLangVersion = '3.5'
+
+    }
+
+    dependencies {
+        compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
+
+        compile group: 'org.springframework.data', name: 'spring-data-rest-hal-browser', version: '3.0.8.RELEASE'
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.0.RELEASE'
+        compile group: 'org.postgresql' , name:'postgresql' , version:'42.2.2'
+        compile group: 'com.vladmihalcea' , name:'hibernate-types-5' , version:'1.2.0'
+        compile group: 'org.json', name: 'json', version: '20090211'
+        compile group: 'org.hibernate', name: 'hibernate-core', version: '4.3.6.Final'
+        compile group: 'org.apache.tomcat', name: 'tomcat-jdbc', version: '9.0.12'
+        compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.0.0.RELEASE'
+
+        compile group: 'org.apache.commons', name: 'commons-lang3', version: "${commonsLangVersion}"
+
+        compile group: 'io.springfox', name: 'springfox-swagger-ui', version: "${swaggerUIVersion}"
+        compile group: 'io.springfox', name: 'springfox-swagger2', version: "${swaggerUIVersion}"
+
+        compile group: 'org.springframework.data', name: 'spring-data-commons', version: "${springDataVersion}"
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-hateoas', version: "${springBootVersion}"
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "${springBootVersion}"
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: "${springBootVersion}"
+
+        compile group: 'org.modelmapper', name: 'modelmapper', version: '0.7.5'
+
+        compile group: 'com.h2database', name: 'h2', version: '1.3.148'
+        compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '1.0.0.RELEASE'
+        compile group: 'org.springframework.boot', name: 'spring-boot-test-autoconfigure', version: '1.4.0.RELEASE'
+        testCompile group: 'io.rest-assured', name: 'spring-mock-mvc', version: '3.0.0'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        testCompile group: 'org.spockframework', name: 'spock-core', version: "${spockframeworkVersion}"
+        testCompile group: 'org.codehaus.groovy', name: 'groovy-all', version: "${codehausGroovyVersion}"
+    }
+
+    test {
+        testLogging {
+            events 'failed'
+            exceptionFormat = 'full'
+            afterSuite { desc, result ->
+                if (!desc.parent) {
+                    logger.lifecycle("\nUnit Tests Result: ${result.resultType} \nTests run: ${result.testCount}, Successes: ${result.successfulTestCount}, Failures: ${result.failedTestCount}, Skipped: ${result.skippedTestCount}\n")
+                }
+            }
+        }
+    }
+
+    bootWar {
+        baseName = "mamphis"
+    }
+
+    springBoot {
+        mainClassName = 'memphis.MemphisApplication'
+    }
+
+    bootRun {
+        // support passing -Dsystem.property=value to bootRun task
+        systemProperties = System.properties as Map<String, ?>
+    }
+
+    bootJar {
+        enabled = false
+    }
+
+    jar {
+        enabled = true
+    }
+}
+
+project(":integration-test") {
+    ext {
+        cucumberVersion = '1.2.5'
+    }
+
+    dependencies {
+        testCompile project(":core")
+
+//        testCompile("org.springframework.boot:spring-boot-starter-config.test")
+//        testCompile group: 'org.assertj', name: 'assertj-core', version: '3.6.1'
+//        testCompile group: 'org.springframework', name: 'spring-config.test', version: '4.0.5.RELEASE'
+//        testCompile group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
+//        testCompile group: 'org.springframework.boot', name: 'spring-boot-config.test', version: '1.4.0.RELEASE'
+//        testCompile group: 'org.springframework', name: 'spring-test', version: '5.0.0.RELEASE'
+//        compile group: 'org.springframework.boot', name: 'spring-boot-test-autoconfigure', version: '1.4.0.RELEASE'
+        testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.5.RELEASE'
+//        testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-config.test', version: "${springBootVersion}"
+        testCompile group: 'info.cukes', name: 'cucumber-core', version: "${cucumberVersion}"
+        testCompile group: 'info.cukes', name: 'cucumber-junit', version: "${cucumberVersion}"
+        testCompile group: 'info.cukes', name: 'cucumber-java', version: "${cucumberVersion}"
+        testCompile group: 'info.cukes', name: 'cucumber-spring', version: "${cucumberVersion}"
+    }
+
+    test { t ->
+        testLogging {
+            events 'failed'
+            exceptionFormat = 'full'
+            afterSuite { desc, result ->
+                if (!desc.parent) {
+                    logger.lifecycle("\nIntegration Tests Result: ${result.resultType} \nTests run: ${result.testCount}, Successes: ${result.successfulTestCount}, Failures: ${result.failedTestCount}, Skipped: ${result.skippedTestCount}\n")
+                }
+            }
+        }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    description = "Generates gradlew[.bat] scripts"
+    gradleVersion = "4.9"
+}

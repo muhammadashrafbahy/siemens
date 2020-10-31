@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="memphis.service.AuthServiceSpec" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-09-20T09:32:16" hostname="bahy-HP-255-G2-Notebook-PC" time="0.041">
+  <properties/>
+  <testcase name="should authenticate user" classname="memphis.service.AuthServiceSpec" time="0.036"/>
+  <testcase name="should throw exception during authentication user" classname="memphis.service.AuthServiceSpec" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="memphis.service.EquipmentSerivceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-09-20T09:32:16" hostname="bahy-HP-255-G2-Notebook-PC" time="0.086">
+  <properties/>
+  <testcase name="should get all equipments " classname="memphis.service.EquipmentSerivceTest" time="0.035"/>
+  <testcase name="should get an equipments " classname="memphis.service.EquipmentSerivceTest" time="0.021"/>
+  <testcase name="shouldnt get non exist equipment" classname="memphis.service.EquipmentSerivceTest" time="0.016"/>
+  <testcase name="should delete an equipments " classname="memphis.service.EquipmentSerivceTest" time="0.002"/>
+  <testcase name="shouldnt delete non exist equipment" classname="memphis.service.EquipmentSerivceTest" time="0.004"/>
+  <testcase name="shouldnt create already exist equipments " classname="memphis.service.EquipmentSerivceTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

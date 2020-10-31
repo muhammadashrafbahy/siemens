@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="memphis.CucumberRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="bahy-HP-255-G2-Notebook-PC" time="0.0">
+  <properties/>
+  <system-out><![CDATA[store equipment to the database
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_, equipment0_.actuator as actuator2_0_, equipment0_.postioner as postione3_0_, equipment0_.sensor as sensor4_0_, equipment0_.valve as valve5_0_ from equipment equipment0_
+store equipment to the database
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+?[2m2018-09-20 11:32:56.256?[0;39m ?[31mERROR?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mm.a.r.e.exceptionHandleController       ?[0;39m ?[2m:?[0;39m Error : APP1-EQUIPMENT-ERROR-001 , the equipment whose id is 225522u1 not found
+store equipment to the database
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: delete from equipment where equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+?[2m2018-09-20 11:32:56.546?[0;39m ?[31mERROR?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mm.a.r.e.exceptionHandleController       ?[0;39m ?[2m:?[0;39m Error : APP1-EQUIPMENT-ERROR-001 , the equipment whose id is 225522u1 not found
+store equipment to the database
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+?[2m2018-09-20 11:32:56.692?[0;39m ?[31mERROR?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mm.a.r.e.exceptionHandleController       ?[0;39m ?[2m:?[0;39m Error : APP1-EQUIPMENT-ERROR-001 , the equipment whose id is 225522u1 not found
+store equipment to the database
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: update equipment set actuator=?, postioner=?, sensor=?, valve=? where equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+store equipment to the database
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+store equipment to the database
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+Hibernate: insert into equipment (actuator, postioner, sensor, valve, equipment_id) values (?, ?, ?, ?, ?)
+Hibernate: select equipment0_.equipment_id as equipmen1_0_0_, equipment0_.actuator as actuator2_0_0_, equipment0_.postioner as postione3_0_0_, equipment0_.sensor as sensor4_0_0_, equipment0_.valve as valve5_0_0_ from equipment equipment0_ where equipment0_.equipment_id=?
+?[2m2018-09-20 11:32:57.753?[0;39m ?[31mERROR?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mm.a.r.e.exceptionHandleController       ?[0;39m ?[2m:?[0;39m Error : APP1-EQUIPMENT-ERROR-003 , the equipment whose id is 22Y2071 already exist
+
+?[31mFailed scenarios:?[0m
+?[31mequipment.feature:26 ?[0m# Scenario: User calls a rest endpoint to get Details about an equipment according to given equipment_id
+?[31mequipment.feature:100 ?[0m# Scenario: User calls a rest endpoint to update an equipment according to given equipment_id
+?[31mequipment.feature:135 ?[0m# Scenario: User calls a rest endpoint to create new equipment
+
+13 Scenarios (?[31m3 failed?[0m, ?[32m10 passed?[0m)
+78 Steps (?[31m3 failed?[0m, ?[32m75 passed?[0m)
+0m3.873s
+
+java.lang.AssertionError: Node is null!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at memphis.StepDefination.equipmentStepDefination.lambda$iShouldSeeJsonResponseWithTheFollowingKeysAndValues$1(equipmentStepDefination.java:159)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1505)
+	at memphis.StepDefination.equipmentStepDefination.iShouldSeeJsonResponseWithTheFollowingKeysAndValues(equipmentStepDefination.java:157)
+	at ✽.And the json response of the "equipment" should be like that(equipment.feature:36)
+
+java.lang.AssertionError: Node is null!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at memphis.StepDefination.equipmentStepDefination.lambda$iShouldSeeJsonResponseWithTheFollowingKeysAndValues$1(equipmentStepDefination.java:159)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1505)
+	at memphis.StepDefination.equipmentStepDefination.iShouldSeeJsonResponseWithTheFollowingKeysAndValues(equipmentStepDefination.java:157)
+	at ✽.And the json response of the "equipment" should be like that(equipment.feature:114)
+
+java.lang.AssertionError: Node is null!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at memphis.StepDefination.equipmentStepDefination.lambda$iShouldSeeJsonResponseWithTheFollowingKeysAndValues$1(equipmentStepDefination.java:159)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1505)
+	at memphis.StepDefination.equipmentStepDefination.iShouldSeeJsonResponseWithTheFollowingKeysAndValues(equipmentStepDefination.java:157)
+	at ✽.And the json response of the "equipment" should be like that(equipment.feature:145)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,4 @@
+rootProject.name = 'memphis'
+include 'core'
+include 'integration-test'
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: User calls a rest endpoint to create new equipment" tests="9" skipped="0" failures="2" errors="0" timestamp="2018-09-20T09:32:57" hostname="bahy-HP-255-G2-Notebook-PC" time="0.139">
+  <properties/>
+  <testcase name="When user authenticate with password &quot;test&quot;" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.0"/>
+  <testcase name="Then the response status code should be 200" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.0"/>
+  <testcase name="When user sends POST request to endpoint /equipment/ with content-type application/json and empty headers and body {&quot;equipment_id&quot;:&quot;news&quot;,&quot;valve&quot;:&quot;news&quot;,&quot;actuator&quot; :&quot;news&quot;,&quot;postioner&quot;:&quot;news&quot;,&quot;sensor&quot;:&quot;news&quot;}" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.0"/>
+  <testcase name="Then the response status code should be 201" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.0"/>
+  <testcase name="When user sends GET request to endpoint /equipment/news with content-type application/json and empty headers" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.0"/>
+  <testcase name="Then the response status code should be 200" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.0"/>
+  <testcase name="And the json response has &quot;equipment&quot; object" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.0"/>
+  <testcase name="And the json response of the &quot;equipment&quot; should be like that" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.0">
+    <failure message="java.lang.AssertionError: Node is null!" type="java.lang.AssertionError">java.lang.AssertionError: Node is null!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at memphis.StepDefination.equipmentStepDefination.lambda$iShouldSeeJsonResponseWithTheFollowingKeysAndValues$1(equipmentStepDefination.java:159)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1505)
+	at memphis.StepDefination.equipmentStepDefination.iShouldSeeJsonResponseWithTheFollowingKeysAndValues(equipmentStepDefination.java:157)
+	at ✽.And the json response of the &quot;equipment&quot; should be like that(equipment.feature:145)
+</failure>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: User calls a rest endpoint to create new equipment" time="0.217">
+    <failure message="java.lang.AssertionError: Node is null!" type="java.lang.AssertionError">java.lang.AssertionError: Node is null!
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertNotNull(Assert.java:712)
+	at memphis.StepDefination.equipmentStepDefination.lambda$iShouldSeeJsonResponseWithTheFollowingKeysAndValues$1(equipmentStepDefination.java:159)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at java.util.Collections$UnmodifiableMap.forEach(Collections.java:1505)
+	at memphis.StepDefination.equipmentStepDefination.iShouldSeeJsonResponseWithTheFollowingKeysAndValues(equipmentStepDefination.java:157)
+	at ✽.And the json response of the &quot;equipment&quot; should be like that(equipment.feature:145)
+</failure>
+  </testcase>
+  <system-out><![CDATA[?[2m2018-09-20 11:32:57.222?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.t.c.support.AbstractContextLoader   ?[0;39m ?[2m:?[0;39m Could not detect default resource locations for test class [memphis.AbstractIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+?[2m2018-09-20 11:32:57.235?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+?[2m2018-09-20 11:32:57.237?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5cfb025, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@51ddafb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47258143, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@288d7a1c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@50bbb9b0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3b1a6b5e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50decae7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1340077a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1e3b5a9b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@76139299, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@503cf74e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@43d451e4]
+?[2m2018-09-20 11:32:57.238?[0;39m ?[32m INFO?[0;39m ?[35m6103?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.b.f.s.DefaultListableBeanFactory    ?[0;39m ?[2m:?[0;39m Replacing scope 'cucumber-glue' from [cucumber.runtime.java.spring.GlueCodeScope@6afe4c26] to [cucumber.runtime.java.spring.GlueCodeScope@77f2487]
+before implementation
+Hibernate: select equipment0_.equipment_id as equipmen1_0_, equipment0_.actuator as actuator2_0_, equipment0_.postioner as postione3_0_, equipment0_.sensor as sensor4_0_, equipment0_.valve as valve5_0_ from equipment equipment0_
+Hibernate: delete from equipment where equipment_id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
